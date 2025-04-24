@@ -34,6 +34,7 @@ function App() {
     <div className="App">
       <Greeting name="Денис" />
       <ShoppingList products={products} />
+      <ShoppingList products={products2} />
       <OrderStatus orders={orders} />
     </div>
   );
