@@ -1,13 +1,13 @@
 import React from "react";
 
-const ShoppingList = (props) => {
+const ShoppingList = ({products}) => {
   return (
     <div>
-      {props.products.length > 0 ? (
+      {products.length > 0 ? (
         <ul>
           <h2>Список покупок:</h2>
-          {props.products.map((product) => (
-            <li>{product}</li>
+          {products.map((product, index) => (
+            <li key={index}>{product}</li>
           ))}
         </ul>
       ) : (

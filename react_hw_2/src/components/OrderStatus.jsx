@@ -1,10 +1,10 @@
 import React from 'react'
 
-const OrderStatus = (props) => {
-    const IdOrders = Math.floor(Math.random() * props.orders.length);
+const OrderStatus = ({orders}) => {
+    const IdOrders = Math.floor(Math.random() * orders.length);
   return (
     <div>
-    <p>Заказ #{props.orders[IdOrders].orderId}: {props.orders[IdOrders].status}</p>
+    <p>Заказ #{orders[IdOrders].orderId}: {orders[IdOrders].status}</p>
     </div>
   )
 }
