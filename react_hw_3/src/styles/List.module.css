@@ -1,0 +1,28 @@
+.person{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: aliceblue;
+}
+
+button{
+    width: 65px;
+    height: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(241, 109, 109);
+    color: white;
+    border: none;
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: rgb(192, 86, 86);;
+}
