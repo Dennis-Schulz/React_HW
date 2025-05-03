@@ -6,4 +6,20 @@
   align-items: center;
 }
 
+.description {
+  text-align: center;
+  font-size: 24px;
+  font-family: Open Sans, sans-serif;
+}
+
+.slide {
+  transform: translateX(-100vw); 
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
 

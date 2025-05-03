@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(240, 240, 240);
+    background-color:rgb(194, 161, 238);
+    opacity: 0.8;
     border-radius: 10px;
     width: 45vw;
     height: 100vh;
