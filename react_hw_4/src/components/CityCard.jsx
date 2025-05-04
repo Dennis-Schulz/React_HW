@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from '../components/styles/CityCard.module.css'
+import {ReactComponent as ArrowBack} from '../components/icons/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg'
+import {ReactComponent as ArrowForward} from '../components/icons/arrow_forward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg'
 
 const CityCard = ({ city }) => {
   const descriptionRef = useRef(null)
@@ -24,9 +26,11 @@ const CityCard = ({ city }) => {
   return (
     <div className={styles.cityCard}>
       <h2>{city.name}</h2>
-      <img src={city.imageUrl[imageIndex]} alt={city.name} style={{ width: "100%", maxWidth: "350px" }} />
-      <button onClick={() => nextImage()}>Вперед</button>
-      <button onClick={() => prevImage()}>Назад</button>
+      <div className={styles.slider}>
+      <ArrowBack className={styles.arrow} onClick={() => prevImage()}/>
+      <img src={city.imageUrl[imageIndex]} alt={city.name} style={{ width: "100%", maxWidth: "600px" }} />
+      <ArrowForward className={styles.arrow} onClick={() => nextImage()}/>
+      </div>
       <p ref={descriptionRef} className={`${styles.description} ${styles.slide}`}>
         {city.description}
       </p>
