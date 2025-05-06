@@ -1,0 +1,10 @@
+.logo{
+    width: 100%;
+}
+
+.logoImg{
+    width: clamp(6rem, 20vw, 8rem);
+    height: 44px;
+    margin-top: 55px;
+    margin-left: 35px;
+}

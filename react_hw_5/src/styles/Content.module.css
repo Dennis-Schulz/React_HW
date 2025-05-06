@@ -1,0 +1,41 @@
+.content {
+  margin-top: 50px;  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #1ed760;
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  border: 3px solid #1ed760;
+  border-radius: 65px;
+  max-width: 446px;
+  width: 100%;
+  aspect-ratio: 2.5/1;
+  margin-top: 30px;
+  gap: 18px;
+}
+
+.iconImg {
+  width: clamp(4rem, 22vw, 6rem);
+  height: auto;
+  cursor: pointer;
+}
+
+.iconImg:hover {
+  filter: brightness(0) saturate(100%) invert(45%) sepia(80%) saturate(600%) hue-rotate(180deg);
+}
