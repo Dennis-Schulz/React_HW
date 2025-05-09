@@ -38,4 +38,6 @@ a {
 
 .iconImg:hover {
   filter: brightness(0) saturate(100%) invert(45%) sepia(80%) saturate(600%) hue-rotate(180deg);
+transform: translateY(-7px);
+transition: all 0.3s ease-in-out;
 }
