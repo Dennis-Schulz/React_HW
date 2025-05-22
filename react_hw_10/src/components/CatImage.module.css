@@ -1,0 +1,75 @@
+.catImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+  transition: transform 0.5s ease;
+}
+
+.shrunk {
+  transform: scale(0.2);
+}
+
+.expanded {
+  transform: scale(1);
+}
+
+button {
+  background-color: hsl(332, 55%, 62%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: hsl(329, 48%, 66%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f0adc0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.wave {
+  position: relative;
+}
+
+.waveSpan {
+  position: relative;
+  display: inline-block;
+  color: #eb3ba8;
+  font-size: 6em;
+  animation: animate 2s ease-in-out infinite;
+  animation-delay: calc(.1s*var(--i));
+}
+@keyframes animate {
+  0% {
+      transform: translateY(0px);
+  }
+  20% {
+      transform: translateY(-20px);
+  }
+  40%,
+  100% {
+      transform: translateY(0px);
+  }
+}
