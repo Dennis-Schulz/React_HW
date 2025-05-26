@@ -88,7 +88,7 @@ const CatImage = () => {
         src={catImage}
         alt="Random cat"
       />
-      <button onClick={fetchCatImage}>Load New Image</button>
+      <button onClick={fetchCatImage} >Load New Image</button>
     </div>
   )
 }
