@@ -1,0 +1,77 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 300px;
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cardImg {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.title {
+    margin: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.priceButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 15px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price p:first-child {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.price p:last-child {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #68666680;
+    background-color: #E9E9E980;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.95);
+}
