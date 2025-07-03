@@ -1,0 +1,27 @@
+.profileContainer {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.logoutButton {
+  padding: 0.8rem 1.5rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logoutButton:hover {
+  background-color: #535bf2;
+}

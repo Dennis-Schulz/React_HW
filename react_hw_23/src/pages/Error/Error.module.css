@@ -1,0 +1,38 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+.homeLink {
+  padding: 0.8rem 1.5rem;
+  background-color: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.homeLink:hover {
+  background-color: #535bf2;
+  transform: translateY(-2px);
+}
